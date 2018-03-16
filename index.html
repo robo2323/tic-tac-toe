@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    
+    <title>Tic Tac Toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <div id="modal">
+        <div id="modal-container">
+            <div class="start-modal" id="choose-players">
+                Welcome to
+                <span class="red-text">TIC</span>
+                <span class="green-text"> TAC</span>
+                <span class="blue-text"> TOE! </span>
+                <!--<div id="line-break">________</div>-->
+                <div class="clickable" id="play-computer">
+                    <b>&gt;&gt;</b> Play against the computer
+                    <b>&lt;&lt;</b>
+                </div>
+                <div class="clickable" id="two-player">
+                    <b>&gt;&gt;</b> play against a friend (or yourself!)
+                    <b>&lt;&lt;</b>
+                </div>
+            </div>
+            <div class="start-modal" id="choose-skill">
+                Choose difficulty
+                <div class="clickable" id="easy">
+                    <b>&gt;&gt;</b> Easy
+                    <b>&lt;&lt;</b>
+                </div>
+                <div class="clickable" id="hard">
+                    <b>&gt;&gt;</b> Hard
+                    <b>&lt;&lt;</b>
+                </div>
+            </div>
+            <div class="start-modal" id="player-1-select-token">
+                <div>Player
+                    <span style="color:#33ccff">one</span> select your token</div>
+                <span class="clickable token" id="p1-select-x">&gt;&gt;
+                    <b>X</b> &lt;&lt;</span>
+                <span class="clickable token" id="p1-select-0">&gt;&gt;
+                    <b>0</b> &lt;&lt;</span>
+            </div>
+            <div class="start-modal" id="player-1-select-color">
+                <div>Player
+                    <span style="color:#33ccff">one</span> select color</div>
+                <div>
+                    <span class="p1-color-select color-clickable red-text" data-color="#ff3300">*</span>
+                    <span class="p1-color-select color-clickable green-text" data-color="#00cc66">*</span>
+                </div>
+                <span class="p1-color-select color-clickable blue-text" data-color="#0066FF">*</span>
+                <span class="p1-color-select color-clickable purple-text" data-color="#7155a2">*</span>
+            </div>
+            <div class="start-modal" id="player-2-select-color">
+                <div>Player
+                    <span class="red-text">two</span> select color</div>
+                <div>
+                    <span class="p2-color-select color-clickable red-text" data-color="#ff3300">*</span>
+                    <span class="p2-color-select color-clickable green-text" data-color="#00cc66">*</span>
+                </div>
+                <span class="p2-color-select color-clickable blue-text" data-color="#0066FF">*</span>
+                <span class="p2-color-select color-clickable purple-text" data-color="#7155a2">*</span>
+            </div>
+            <div id="game-over">
+                <div class="clickable" id="play-again">Play again?</div>
+                <br>
+                <div>or</div>
+                <br>
+                <div class="clickable" id="restart">Return to menu?</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="paper">
+
+        <div id="box-container">
+            <div id="player-info"></div>
+            <div id="scores">
+                <span id="p1-score"></span>
+                <span id="p2-score"></span>
+            </div>
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+
+
+            <div class="box" id="box7"></div>
+            <div class="box" id="box8"></div>
+            <div class="box" id="box9"></div>
+            <div class="win-line" id="win-row-one"></div>
+            <div class="win-line" id="win-row-two"></div>
+            <div class="win-line" id="win-row-three"></div>
+            <div class="win-line" id="win-row-four"></div>
+            <div class="win-line" id="win-row-five"></div>
+            <div class="win-line" id="win-row-six"></div>
+            <div class="win-line" id="win-row-seven"></div>
+            <div class="win-line" id="win-row-eight"></div>
+
+
+
+        </div>
+
+
+        <div id="paper2"></div>
+        <div id="paper3"></div>
+        <div id="paper4"></div>
+        <div id="paper5"></div>
+        <div id="paper6"></div>
+
+
+    </div>
+</body>
+
+</html>
